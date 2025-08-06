@@ -4,9 +4,11 @@
   "private": true,
   "description": "A simple PHP application with MySQL database integration",
   "scripts": {
+    "build": "tailwindcss -i ./resources/css/globals.css -o ./public/css/globals.css",
+    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:app\"",
+    "dev:app": "php -S localhost:3000 -t public",
     "dev:tailwind": "tailwindcss -i ./resources/css/globals.css -o ./public/css/globals.css --watch",
-    "dev:app": "cd public && php -S localhost:3000",
-    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:app\""
+    "start": "php -S localhost:3000 -t public"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
