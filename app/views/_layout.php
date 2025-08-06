@@ -9,6 +9,8 @@
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link href="/css/globals.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
 
   <body>
