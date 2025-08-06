@@ -1,0 +1,12 @@
+{
+  "name": "tiesen/php-mysql",
+  "description": "learn php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tiesen243",
+      "email": "ttien56906@gmail.com"
+    }
+  ],
+  "require": {}
+}

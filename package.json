@@ -1,0 +1,16 @@
+{
+  "name": "php-mysql",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple PHP application with MySQL database integration",
+  "scripts": {
+    "dev:tailwind": "tailwindcss -i ./resources/css/globals.css -o ./public/css/globals.css --watch",
+    "dev:app": "cd public && php -S localhost:3000",
+    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:app\""
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "concurrently": "^9.2.0",
+    "tailwindcss": "^4.1.11"
+  }
+}

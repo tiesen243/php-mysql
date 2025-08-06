@@ -1,0 +1,15 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build/Generated files
+public/css/globals.css
+
+# Environment files
+.env*
+!.env.example
+
