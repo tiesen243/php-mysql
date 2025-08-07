@@ -1,9 +1,9 @@
 <?php
 
 $DB_NAME = $_ENV['DB_NAME'];
-$DB_HOST = $_ENV['DB_HOST'];
 $DB_USER = $_ENV['DB_USER'];
 $DB_PASSWORD = $_ENV['DB_PASSWORD'];
+$DB_HOST = $_ENV['DB_HOST'] ?? '127.0.0.1';
 
 try {
   $dsn = "mysql:host=$DB_HOST;dbname=$DB_NAME;charset=utf8mb4";
