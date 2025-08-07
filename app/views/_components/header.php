@@ -7,14 +7,17 @@
     <nav class="flex items-center gap-4">
     <?php
     $routes = [
-        'home' => ['label' => 'Home', 'path' => '/'],
-        'about' => ['label' => 'About', 'path' => '/about'],
-        'contact' => ['label' => 'Contact', 'path' => '/contact'],
+      'home' => ['label' => 'Home', 'path' => '/'],
+      'about' => ['label' => 'About', 'path' => '/about'],
+      'contact' => ['label' => 'Contact', 'path' => '/contact'],
     ];
 
     foreach ($routes as $route => $data) {
-        $isActive = ($_SERVER['REQUEST_URI'] === $data['path']) ? 'text-primary' : 'text-muted-foreground';
-        echo "<a href=\"{$data['path']}\" class=\"{$isActive} hover:text-primary transition-colors\">{$data['label']}</a>";
+      $isActive =
+        $_SERVER['REQUEST_URI'] === $data['path']
+          ? 'text-primary'
+          : 'text-muted-foreground';
+      echo "<a href=\"{$data['path']}\" class=\"{$isActive} hover:text-primary transition-colors\">{$data['label']}</a>";
     }
     ?>
     </nav>

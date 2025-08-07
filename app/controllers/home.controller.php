@@ -2,10 +2,10 @@
 
 class HomeController extends Controller
 {
-    public function index()
-    {
-        $this->view('home', [
-          'title' => 'Home',
-        ]);
-    }
+  public function index()
+  {
+    $this->render('home', [
+      'title' => 'Home',
+    ]);
+  }
 }

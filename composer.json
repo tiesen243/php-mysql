@@ -8,5 +8,7 @@
       "email": "ttien56906@gmail.com"
     }
   ],
-  "require": {}
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  }
 }
