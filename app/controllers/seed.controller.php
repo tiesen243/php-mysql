@@ -1,6 +1,6 @@
 <?php
 
-class SeedController
+class SeedController extends Controller
 {
   public function index()
   {

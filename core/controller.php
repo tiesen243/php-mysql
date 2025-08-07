@@ -17,7 +17,7 @@ class Controller
   {
     $filePath = dirname(__DIR__) . '/app/views/' . $view . '/page.php';
     if (!file_exists($filePath)) {
-      die('View file not found: ' . $filePath);
+      $filePath = dirname(__DIR__) . '/app/views/not-found/page.php';
     }
 
     extract($data);
